@@ -22,7 +22,7 @@ export default class Chat {
         this.MobileAdaptive.avatar(user);
         this.user = user;
         // this.userWidget();
-        this.ws = new WebSocket('ws://localhost:9090');
+        this.ws = new WebSocket('wss://pochatok-sever.onrender.com');
         this.userBtnsListeners();
 
         this.ws.addEventListener('open', () => {
