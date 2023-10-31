@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pochatok</title>
+</head>
+<body>
+    <div class="app" data-app="app">
+        <div class="login-window-wrapper" data-login="window-wrapper">
+            <div class="login-window">
+
+                <div class="header">
+                    <div class="logo"></div>
+                    <span class="header__title">
+                        Po<span class="title__selection">Chat</span>Ok
+                    </span>
+                </div>
+
+                <div class="login-hello">
+                    <span>Привет! Представься, и погнали общаться!</span>
+                </div>
+
+                <form class="login__form" name="login-form" novalidate>
+                    <input class="login__email-input login__form-item" name="email" type="email" placeholder="Почта" required>
+                    <input class="login__pass-input login__form-item" name="password" type="password" placeholder="Пароль" required>
+
+                    <div class="login__btns">
+                        <button class="login__enter-btn login__btns-item" type="submit" id="login-window-enter-btn">Вход</button>
+                        <button class="login__new-user-btn login__btns-item" type="button" id="login-window-reg-btn">Регистрация</button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+
+        <div class="header chat-header" data-app-hedaer="header">
+
+            <div class="heade-avatar" data-app-header="avatar"></div>
+
+            <div class="logo-wrapper">
+                <div class="logo"></div>
+                <span class="header__title">
+                    Po<span class="title__selection">Chat</span>Ok
+                </span>
+            </div>
+            
+            <div class="userOnlineBtn" data-users-online="show-list"></div>
+        </div>
+
+        <div class="chat" data-chat="chat-box">
+
+            <div class="chat__container">
+                <div class="chat__messages-area-wrapper">
+                    <div class="chat__messages-area" data-chat="message-area"></div>
+                </div>
+
+                <div class="chat__user-input-box">
+                    <textarea class="user-input-box__input" data-chat="user-input"></textarea>
+
+                    <div class="user-input-box__btns">
+                        <div class="btns__send-message-btns">
+                            <div class="send-message-btns__send btns__item" data-chat="send-message-btn"></div>
+                            <div class="send-message-btns__clear btns__item" data-chat="clear-message-btn"></div>
+                            <div class="send-message-btns__emoji btns__item" data-chat="emoji-btn"></div>
+                        </div>
+
+                        <button class="btns__exit-chat-btn" type="button" data-chat="exit-btn">Выход</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat__user-list" data-chat="user-list-pc">
+                <div class="user-list__header">
+                    <span class="user-list__header-title">Сейчас в сети</span>
+                </div>
+
+                <div class="user-list__content-wrapper" data-user-list="users-online-wrapper">
+
+                    <div class="user-list__content" data-user-list="users-online"></div>
+
+                    <div class="emoji-wrapper hidden" data-emoji="wrapper"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

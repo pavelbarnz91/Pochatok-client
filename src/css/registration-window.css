@@ -1,0 +1,149 @@
+.modal__registration-wrapper {
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(82, 82, 82, 0.438);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-window {
+    width: 30%;
+
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 1px 1px 5px rgb(158, 73, 158);
+    background-color: rgb(252, 218, 252);
+}
+
+.registration-window__avatar-box {
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto;
+    border-radius: 50%;
+
+    background-image: url('../images/avatar-default.png');
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registration-window__avatar {
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.reg-form__select-avatar {
+    width: 30%;
+    height: 25px;
+    margin: 5px auto;
+
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(253, 196, 253);
+    box-shadow: 1px 1px 5px rgb(158, 73, 158);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-avatar {
+    position: absolute;
+    z-index: 999;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.select-avatar__input {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+}
+
+.registration__form-box {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.registration-form__item-box {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.registration-form__item, .user-gender__item {
+    text-align: center;
+    border: none;
+    background-color: none;
+
+    font-size: 20px;
+    font-family: 'comic sans ms';
+}
+.registration-form__item, .user-gender__box { outline: none }
+
+.user-gender__box {
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: none;
+
+    font-size: 20px;
+    font-family: 'comic sans ms';
+    margin-bottom: 5px;
+
+    color: #7a7a7a;
+}
+
+.user-email {
+    font-size: 14px;
+}
+
+.user-settings___btns {
+    margin-top: 10px;
+}
+
+.registration___btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.registration__btns-item {
+    width: 100px;
+    padding: 5px;
+
+    font-family: 'comic sans ms';
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+    background-color: rgb(255, 189, 255);
+    margin-right: 5px;
+}
+.registration__btns-item:hover { background-color: rgb(250, 202, 250) }
+.registration__btns-item:active { background-color: rgb(253, 148, 253) }
