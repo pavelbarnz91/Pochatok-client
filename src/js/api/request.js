@@ -3,27 +3,40 @@ const request = {
     url: 'https://github.com/pavelbarnz91/Pochatok-server:9090',
 
     getModalWindow: function (path) {
-        return fetch(this.url + path).then(async response => {
-            return await response.text()
-        });
+        const headers = new Headers();
+        headers.append('Content-Type', 'text/plain');
+
+        return fetch(this.url + path, {
+            headers: headers
+          }).then(async response => {
+            return await response.text();
+          });
     },
 
     regNewUser: function (path, data) {
+        const headers = new Headers();
+        headers.append('Content-Type', 'text/plain');
+
         return fetch(this.url + path, {
             method: 'POST',
+            headers: headers,
             body: data,
-        }).then(async response => {
+          }).then(async response => {
             return await response.json();
-        })
+          });
     },
 
     login: function (path, data) {
+        const headers = new Headers();
+        headers.append('Content-Type', 'text/plain');
+
         return fetch(this.url + path, {
             method: 'POST',
+            headers: headers,
             body: data,
-        }).then(async response => {
+          }).then(async response => {
             return await response.json();
-        })
+          });
     }
 }
 
